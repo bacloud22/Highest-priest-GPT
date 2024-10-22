@@ -59,7 +59,6 @@ const translations = {
   he: undefined,
   hi: {
     title: "सर्वोच्च पुजारी GPT",
-    username: "उपयोगकर्ता नाम",
     usernamePlaceholder: "अपना नाम दर्ज करें",
     createChannel: "जादूगर के रूप में एक नया चैनल बनाएं ✨",
     askQuestion: "एक प्रश्न पूछें",
@@ -119,6 +118,27 @@ const translations = {
   sq: undefined,
   sr: undefined,
   sv: undefined,
+  te: {
+    title: "హైయస్ట్ ప్రిస్ట్ జి.పి.టి",
+    explanatoryMsg: "ఇది మీ స్నేహితులను ఆటపట్టి౦చటానికి ఉపయోగపడే గేమ్ , మీ స్నేహితులకు కి౦ద లి౦క్ ను షేర్ చేసి ఈ వెబ్ సైట్ మీరు చేసినా ఏ.ఐ. చాట్ బాట్ అని చెప్పి వాళ్ళను ప్రశ్నలు అడగమన౦డి అవతల వైపున మీరు జవాబులు ఇస్తా ఉండండి.",
+    username: "వినియోగదారు పేరు",
+    usernamePlaceholder: "మీ పేరు రాయండి",
+    createChannel: "విజర్ద్ గా కొత్త ఛానల్ ను ప్రారంభించండి ✨",
+    askQuestion: "ప్రశ్నను అడగండి",
+    questionPlaceholder: "ప్రశ్న ను ఇక్కడ రాయండి",
+    askButton: "ప్రశ్న ను అడగండి",
+    answerQuestion: "ప్రశ్నకు జవాబు ఇవ్వ​౦డి",
+    waitingQuestion: "ప్రశ్న కోస​౦ ఎదురుచూస్తూన్నా౦...",
+    answerPlaceholder: "మీ జవాబును ఇక్కడ రాయ​౦డి",
+    answerButton: "మీ జవాబును ప౦ప​౦డి",
+    chatLog: "చాట్ సమాచార​౦",
+    shareLink: "లి౦క్ ను ప్రశ్నలు అడిగే వాళ్ళకు షేర్ చేయ౦డి:",
+    userJoined: "{వినియోగదారు పేరు} {role}గా వచ్చడు",
+    questioner: "ప్రశ్నలు అడిగేవాడు",
+    responder: "ప్రశ్నలు అడిగేవాడు",
+    copyButton: "కాపీ",
+    copied: "కాపీడ్",
+  },
   th: undefined,
   tr: undefined,
   uk: undefined,
@@ -153,6 +173,7 @@ const languageOptions = {
   vi: "Tiếng Việt",
   pt: "Português",
   bn: "বাংলা",
+  te: "తెలుగు"
 };
 
 let currentLanguage = "en"; // Default to English
