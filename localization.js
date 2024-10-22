@@ -7,7 +7,6 @@ const translations = {
   bg: undefined,
   bn: {
     title: "Highest priest GPT",
-    explanatoryMsg: "এটি মজার জন্য একটি সামাজিক হ্যাক গেম। বাহ আপনার বন্ধুদের অন্য ঘর থেকে তাদের প্রশ্নের উত্তর দিয়ে, তাদের ভাবতে বাধ্য করে যে এটা AI কথা বলছে – কিন্তু আসলেই এই জাদুটির পিছনে আপনি!",
     username: "ব্যবহারকারীর নাম",
     usernamePlaceholder: "আপনার নাম লিখুন",
     createChannel: "জাদুকর হিসেবে একটি নতুন চ্যানেল তৈরি করুন ✨",
@@ -34,7 +33,6 @@ const translations = {
   el: undefined,
   en: {
     title: "Highest priest GPT",
-    explanatoryMsg: "This is a social hack game for fun. Wow your friends by answering their questions from another room, making them think it's AI doing the talking – but it’s really you behind the magic!",
     username: "Username",
     usernamePlaceholder: "Enter your name",
     createChannel: "Create a new channel as a wizard ✨",
@@ -61,8 +59,6 @@ const translations = {
   he: undefined,
   hi: {
     title: "सर्वोच्च पुजारी GPT",
-    explanatoryMsg: "यह मनोरंजन के लिए एक सोशल हैक गेम है। दूसरे कमरे से अपने दोस्तों के सवालों के जवाब देकर उन्हें चौंकाएँ, उन्हें ऐसा महसूस कराएँ कि यह AI बात कर रहा है - लेकिन असल में जादू के पीछे आप ही हैं!",
-    username: "उपयोगकर्ता नाम",
     usernamePlaceholder: "अपना नाम दर्ज करें",
     createChannel: "जादूगर के रूप में एक नया चैनल बनाएं ✨",
     askQuestion: "एक प्रश्न पूछें",
@@ -97,7 +93,6 @@ const translations = {
   pl: undefined,
   pt: {
     title: "Highest priest GPT",
-    explanatoryMsg: "Este é um jogo de hack social para se divertir. Surpreenda os seus amigos respondendo às suas perguntas noutra sala, fazendo-os pensar que é a IA que fala – mas na verdade é você por trás da magia!",
     username: "Nome de usuário",
     usernamePlaceholder: "Digite seu nome",
     createChannel: "Criar novo canal como mago ✨",
@@ -123,6 +118,27 @@ const translations = {
   sq: undefined,
   sr: undefined,
   sv: undefined,
+  te: {
+    title: "హైయస్ట్ ప్రిస్ట్ జి.పి.టి",
+    explanatoryMsg: "ఇది మీ స్నేహితులను ఆటపట్టి౦చటానికి ఉపయోగపడే గేమ్ , మీ స్నేహితులకు కి౦ద లి౦క్ ను షేర్ చేసి ఈ వెబ్ సైట్ మీరు చేసినా ఏ.ఐ. చాట్ బాట్ అని చెప్పి వాళ్ళను ప్రశ్నలు అడగమన౦డి అవతల వైపున మీరు జవాబులు ఇస్తా ఉండండి.",
+    username: "వినియోగదారు పేరు",
+    usernamePlaceholder: "మీ పేరు రాయండి",
+    createChannel: "విజర్ద్ గా కొత్త ఛానల్ ను ప్రారంభించండి ✨",
+    askQuestion: "ప్రశ్నను అడగండి",
+    questionPlaceholder: "ప్రశ్న ను ఇక్కడ రాయండి",
+    askButton: "ప్రశ్న ను అడగండి",
+    answerQuestion: "ప్రశ్నకు జవాబు ఇవ్వ​౦డి",
+    waitingQuestion: "ప్రశ్న కోస​౦ ఎదురుచూస్తూన్నా౦...",
+    answerPlaceholder: "మీ జవాబును ఇక్కడ రాయ​౦డి",
+    answerButton: "మీ జవాబును ప౦ప​౦డి",
+    chatLog: "చాట్ సమాచార​౦",
+    shareLink: "లి౦క్ ను ప్రశ్నలు అడిగే వాళ్ళకు షేర్ చేయ౦డి:",
+    userJoined: "{వినియోగదారు పేరు} {role}గా వచ్చడు",
+    questioner: "ప్రశ్నలు అడిగేవాడు",
+    responder: "ప్రశ్నలు అడిగేవాడు",
+    copyButton: "కాపీ",
+    copied: "కాపీడ్",
+  },
   th: undefined,
   tr: undefined,
   uk: undefined,
@@ -130,7 +146,6 @@ const translations = {
   uz: undefined,
   vi: {
     title: "Lãnh Chúa Tối Cao GPT",
-    explanatoryMsg: "Đây là một trò chơi hack xã hội để giải trí. Khiến bạn bè ngạc nhiên bằng cách trả lời câu hỏi của họ từ một phòng khác, khiến họ nghĩ rằng AI đang nói - nhưng thực ra chính bạn là người tạo ra phép thuật!",
     username: "Tên Người dùng",
     usernamePlaceholder: "Nhập tên của bạn",
     createChannel: "Tạo kênh mới với vai trò Lãnh Chúa ✨",
@@ -158,6 +173,7 @@ const languageOptions = {
   vi: "Tiếng Việt",
   pt: "Português",
   bn: "বাংলা",
+  te: "తెలుగు"
 };
 
 let currentLanguage = "en"; // Default to English
