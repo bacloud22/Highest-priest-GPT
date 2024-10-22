@@ -7,6 +7,7 @@ const translations = {
   bg: undefined,
   bn: {
     title: "Highest priest GPT",
+    explanatoryMsg: "এটি মজার জন্য একটি সামাজিক হ্যাক গেম। বাহ আপনার বন্ধুদের অন্য ঘর থেকে তাদের প্রশ্নের উত্তর দিয়ে, তাদের ভাবতে বাধ্য করে যে এটা AI কথা বলছে – কিন্তু আসলেই এই জাদুটির পিছনে আপনি!",
     username: "ব্যবহারকারীর নাম",
     usernamePlaceholder: "আপনার নাম লিখুন",
     createChannel: "জাদুকর হিসেবে একটি নতুন চ্যানেল তৈরি করুন ✨",
@@ -33,6 +34,7 @@ const translations = {
   el: undefined,
   en: {
     title: "Highest priest GPT",
+    explanatoryMsg: "This is a social hack game for fun. Wow your friends by answering their questions from another room, making them think it's AI doing the talking – but it’s really you behind the magic!",
     username: "Username",
     usernamePlaceholder: "Enter your name",
     createChannel: "Create a new channel as a wizard ✨",
@@ -59,6 +61,7 @@ const translations = {
   he: undefined,
   hi: {
     title: "सर्वोच्च पुजारी GPT",
+    explanatoryMsg: "यह मनोरंजन के लिए एक सोशल हैक गेम है। दूसरे कमरे से अपने दोस्तों के सवालों के जवाब देकर उन्हें चौंकाएँ, उन्हें ऐसा महसूस कराएँ कि यह AI बात कर रहा है - लेकिन असल में जादू के पीछे आप ही हैं!",
     username: "उपयोगकर्ता नाम",
     usernamePlaceholder: "अपना नाम दर्ज करें",
     createChannel: "जादूगर के रूप में एक नया चैनल बनाएं ✨",
@@ -94,6 +97,7 @@ const translations = {
   pl: undefined,
   pt: {
     title: "Highest priest GPT",
+    explanatoryMsg: "Este é um jogo de hack social para se divertir. Surpreenda os seus amigos respondendo às suas perguntas noutra sala, fazendo-os pensar que é a IA que fala – mas na verdade é você por trás da magia!",
     username: "Nome de usuário",
     usernamePlaceholder: "Digite seu nome",
     createChannel: "Criar novo canal como mago ✨",
@@ -126,6 +130,7 @@ const translations = {
   uz: undefined,
   vi: {
     title: "Lãnh Chúa Tối Cao GPT",
+    explanatoryMsg: "Đây là một trò chơi hack xã hội để giải trí. Khiến bạn bè ngạc nhiên bằng cách trả lời câu hỏi của họ từ một phòng khác, khiến họ nghĩ rằng AI đang nói - nhưng thực ra chính bạn là người tạo ra phép thuật!",
     username: "Tên Người dùng",
     usernamePlaceholder: "Nhập tên của bạn",
     createChannel: "Tạo kênh mới với vai trò Lãnh Chúa ✨",
