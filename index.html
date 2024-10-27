@@ -26,28 +26,29 @@
   <!-- Language Selector -->
   <select id="languageSelector" onchange="changeLanguage(this.value)">
   </select>
-  <a href="https://github.com/bacloud23/Highest-priest-GPT"><img style="position: absolute; top: 0; left: 0; border: 0; z-index: 1;"
+  <a href="https://github.com/bacloud23/Highest-priest-GPT"><img
+      style="position: absolute; top: 0; left: 0; border: 0; z-index: 1;"
       src="https://github.blog/wp-content/uploads/2008/12/forkme_left_darkblue_121621.png" alt="Fork me on GitHub"></a>
 
   <div class="container">
     <div class="content">
       <h1 data-translate="title">Highest priest GPT</h1>
-      
+
       <!-- Explanatory Message for Questioners -->
       <div id="explanatory-message" style="display: none;" data-translate="explanatoryMsg">
-          <p>This is a social hack game for fun. Wow your friends by answering their questions from another room, making them think it's AI doing the talking – but it’s really you behind the magic!</p>
+        <p>This is a social hack game for fun. Wow your friends by answering their questions from another room, making
+          them think it's AI doing the talking – but it’s really you behind the magic!</p>
       </div>
       <!-- End of Explanatory Message -->
-      
+
       <div class="form-group">
-        <label for="username" data-translate="username">Username</label>
+        <label for="username" data-translate="username">Username</label><br>
         <input type="text" id="username" data-translate="usernamePlaceholder" placeholder="Enter your name" />
       </div>
 
       <button class="btn" id="joinBtn" data-translate="createChannel">
-        Create a new channel as a wizard ✨
+        <span>Create a new channel as a wizard ✨</span>
       </button>
-
       <div id="questionSection">
         <h3 data-translate="askQuestion">Ask a Question</h3>
         <div class="form-group">
@@ -58,11 +59,13 @@
 
       <div id="answerSection">
         <h3 data-translate="answerQuestion">Answer the Question</h3>
-        <p id="displayQuestion" data-translate="waitingQuestion">Waiting for a question...</p>
+        <p id="displayQuestion" data-translate="waitingQuestion">Waiting for a question...</p><br>
         <div class="form-group">
           <input type="text" id="answer" data-translate="answerPlaceholder" placeholder="Type your answer here" />
         </div>
-        <button class="btn" id="answerBtn" data-translate="answerButton">Send Answer</button>
+        <button class="btn" id="answerBtn" data-translate="answerButton">
+          <span>Send Answer</span>
+        </button>
       </div>
 
       <div id="shareLink">
