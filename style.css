@@ -53,13 +53,56 @@ body {
   /* min-height: 100%; */
 }
 
+
+
+
 h1 {
   text-align: center;
   margin-bottom: 20px;
-  font-size: 24px;
+  font-size: 3rem; /* Larger font for emphasis */
   color: #f5f5f5;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  background: linear-gradient(90deg, #ffffff, #f5f5dc, #e0e0e0, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent; /* Allows gradient to show */
+  text-shadow: 0 0 15px rgba(245, 245, 245, 0.5), 
+               0 0 30px rgba(245, 245, 220, 0.3), 
+               0 0 45px rgba(245, 245, 245, 0.2);
+  animation: subtleGlow 4s ease-in-out infinite alternate, 
+             scale 2s ease-in-out infinite alternate, 
+             gradientShift 8s ease-in-out infinite;
 }
+
+/* Keyframes for subtle glowing effect */
+@keyframes subtleGlow {
+  0% {
+      text-shadow: 0 0 10px rgba(245, 245, 245, 0.4),
+                   0 0 20px rgba(245, 245, 220, 0.2),
+                   0 0 30px rgba(245, 245, 245, 0.1);
+  }
+  100% {
+      text-shadow: 0 0 20px rgba(245, 245, 245, 0.6),
+                   0 0 35px rgba(245, 245, 220, 0.4),
+                   0 0 50px rgba(245, 245, 245, 0.3);
+  }
+}
+
+/* Keyframes for subtle scaling */
+@keyframes scale {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.02); }
+}
+
+/* Keyframes for dynamic gradient shift */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+
+/* ================= */
 .form-group {
   margin-bottom: 20px;
   display: flex;
