@@ -26,6 +26,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Courier New", monospace;
   color: #e0e0e0;
@@ -35,6 +36,7 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+
 .container {
   width: 100%;
   /* max-width: 100%; */
@@ -45,67 +47,143 @@ body {
   padding: 10px;
   min-height: 80%;
 }
+
 .content {
-	background: linear-gradient(180deg, #313333, #202020);
-	border-radius: 10px;
-	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-	padding: 2rem;
+  background: linear-gradient(180deg, #313333, #202020);
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  padding: 2rem;
   /* min-height: 100%; */
 }
+
+
+/* ===========================by satya==================== */
 
 h1 {
   text-align: center;
   margin-bottom: 20px;
-  font-size: 24px;
+  font-size: 3rem;
+  /* Larger font for emphasis */
   color: #f5f5f5;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  background: linear-gradient(90deg, #ffffff, #f5f5dc, #e0e0e0, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  /* Allows gradient to show */
+  text-shadow: 0 0 15px rgba(245, 245, 245, 0.5),
+    0 0 30px rgba(245, 245, 220, 0.3),
+    0 0 45px rgba(245, 245, 245, 0.2);
+  animation: subtleGlow 4s ease-in-out infinite alternate,
+    scale 2s ease-in-out infinite alternate,
+    gradientShift 8s ease-in-out infinite;
 }
+
+/* Keyframes for subtle glowing effect */
+@keyframes subtleGlow {
+  0% {
+    text-shadow: 0 0 10px rgba(245, 245, 245, 0.4),
+      0 0 20px rgba(245, 245, 220, 0.2),
+      0 0 30px rgba(245, 245, 245, 0.1);
+  }
+
+  100% {
+    text-shadow: 0 0 20px rgba(245, 245, 245, 0.6),
+      0 0 35px rgba(245, 245, 220, 0.4),
+      0 0 50px rgba(245, 245, 245, 0.3);
+  }
+}
+
+/* Keyframes for subtle scaling */
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.02);
+  }
+}
+
+/* Keyframes for dynamic gradient shift */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+/* General Form Group Styling */
 .form-group {
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
 }
+
+/* Label Styling */
 .form-group label {
   font-size: 1rem;
   margin-bottom: 5px;
   color: #f0f0f0;
   text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
 }
+
+/* Input Styling */
 .form-group input {
-  padding: 10px;
+  padding: 15px;
   font-size: 16px;
   border: 1px solid #555;
   border-radius: 5px;
   background-color: #2c2c2c;
   color: #f5f5f5;
   transition: border-color 0.3s;
+  margin-bottom: 10px;
+  /* Space between input and button */
 }
+
 .form-group input:focus {
   border-color: #ffffff;
   outline: none;
 }
-.shlink {
-  color: #999797;
+
+input:hover {
+  background-color: #3a3a3a;
+  border-color: #891eec;
 }
+
+
+/* Button Styling */
 .btn {
   padding: 12px;
-  background-color: #9434ec;
-  color: #fff;
+  background-color: #a45ce8;
+  color: #1b1a1a;
   border: none;
   border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s, box-shadow 0.3s;
   font-size: 1rem;
   cursor: pointer;
   margin-bottom: 10px;
   text-align: center;
   width: 100%;
+  overflow: hidden;
+  transition: 0.5s all;
 }
+
 .btn:hover {
   background-color: #891eec;
   box-shadow: 0 0 10px #891eec;
+  color: whitesmoke;
+  transition: 0.5s all;
 }
+
+/* ===========================by satya==================== */
 
 .area {
   background: #fb923c;
@@ -228,6 +306,7 @@ h1 {
   display: none;
   margin-top: 20px;
 }
+
 #shareLink {
   margin-top: 20px;
   padding: 10px;
@@ -242,10 +321,12 @@ h1 {
 #chat {
   margin-top: 30px;
 }
+
 #chat h3 {
   margin-bottom: 10px;
   font-size: 18px;
 }
+
 #messageLog {
   padding: 15px;
   background-color: #2a2a2a00;
@@ -286,13 +367,15 @@ h1 {
   font-size: 14px;
   margin: 20px 0 0 0;
   width: 100%;
-  flex-shrink: 0; /* Prevent the button from shrinking */
+  flex-shrink: 0;
+  /* Prevent the button from shrinking */
 }
 
 .shlink {
   flex-grow: 1;
   word-break: break-all;
-  margin-right: 10px; /* Add some space between the link and the button */
+  margin-right: 10px;
+  /* Add some space between the link and the button */
 }
 
 /* Adjust the main .btn class to not affect the copy button */
@@ -308,10 +391,11 @@ h1 {
     height: 50%;
     /* min-height: 70vh; */
   }
- 
-  .copy-btn{
+
+  .copy-btn {
     font-size: 16px;
   }
+
   #shareLink {
     font-size: 16px;
   }
@@ -322,16 +406,17 @@ h1 {
     width: 50%;
   }
 }
+
 @media (max-width: 450px) {
-  h1{
+  h1 {
     font-size: 14px;
   }
-  #joinBtn{
+
+  #joinBtn {
     font-size: 13px;
   }
-  .btn{
+
+  .btn {
     padding: 9px 12px;
   }
 }
-
-
